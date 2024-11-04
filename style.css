@@ -1,3 +1,24 @@
 img.align-middle {
     height: 150px;
 }
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+}
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+.new-price {
+    color: red;
+    font-weight: bold;
+}
+
+img.card-img-top {
+    width: 50%;
+}
