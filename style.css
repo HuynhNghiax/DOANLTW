@@ -1,3 +1,9 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+
 img.align-middle {
     height: 150px;
 }
@@ -21,4 +27,15 @@ img.align-middle {
 
 img.card-img-top {
     width: 50%;
+}
+#dslist li {
+    border-bottom: slategray solid 2px;
+    width: 100%;
+    background-color: #f8f8f8;
+    
+}
+#dslist li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
 }
