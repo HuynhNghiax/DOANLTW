@@ -39,3 +39,6 @@ img.card-img-top {
     text-decoration: none;
     color: black;
 }
+.row.align-items-center {
+    background: white;
+}
