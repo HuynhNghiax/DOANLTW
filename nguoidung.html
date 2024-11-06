@@ -26,13 +26,9 @@
             <div id="header2"></div>
             <nav id="nav"></nav>
 
-            <div class="row pt-3">
-              <div class="col-md-3">
-                <div id="chonmaybom"></div>
-                <div id="tintuc"></div>
-              </div>
+            
               <!-- phan thay doi -->
-              <div class="col-md-9">
+              <div class="col-md-12">
                 <h3>Đăng nhập</h3>
                 <div class="input-group mb-3">
                   <span class="input-group-text" id="basic-addon1">Tên nguời dùng</span>
@@ -42,16 +38,18 @@
                   <span class="input-group-text" id="basic-addon1">Mật khẩu</span>
                   <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-                
-            </div>
+                <div class="row">
+                  <div></div>
+                </div>
+            
 
             <footer id="footer2"></footer>
           </div>
         </div>
-      </div>
-
-      <footer id="footer"></footer>
+      </div> 
+      <footer id="footer"></footer> 
     </div>
+    
     <script>
       const header = document.getElementById("header");
       const footer = document.getElementById("footer");
@@ -82,5 +80,6 @@
         .then((response) => response.text())
         .then((html) => (chonmaybom.innerHTML = html));
     </script>
+        
   </body>
 </html>
