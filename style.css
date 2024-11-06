@@ -2,11 +2,6 @@ html,body{
     margin: 0;
     padding: 0;
 }
-
-
-img.align-middle {
-    height: 150px;
-}
 .discount-badge {
     position: absolute;
     top: 10px;
@@ -42,3 +37,15 @@ img.card-img-top {
 .row.align-items-center {
     background: white;
 }
+.image-container {
+    display: flex; /* Sắp xếp các ảnh theo hàng ngang */
+    justify-content: space-around; /* Căn chỉnh các ảnh đều nhau */
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+    width: 100%; /* Đảm bảo chiều rộng của container đầy đủ */
+  }
+
+  .image-container img {
+    display: none; /* Ẩn ảnh mặc định */
+    width: 150px; /* Chiều rộng ảnh */
+    height: 100px; /* Chiều cao ảnh */
+  }
