@@ -15,6 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/giohang.css">
   </head>
 
   <body>
@@ -27,13 +28,93 @@
             <nav id="nav"></nav>
 
             <div class="row pt-3">
-              <div class="col-md-3">
-                <div id="chonmaybom"></div>
-                <div id="tintuc"></div>
-              </div>
               <!-- phan thay doi -->
-              <div class="col-md-9">
+              <div class="col">
                 <h4 class="text-primary">GIỎ HÀNG</h4>
+                <table class="table table-bordered align-middle">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Sản phẩm</th>
+                      <th>Giá</th>
+                      <th>Số lượng</th>
+                      <th>Tổng cộng</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Mỗi dòng sản phẩm -->
+                    <tr>
+                      <td>
+                        <button class="btn btn-link text-danger p-0">
+                          &times;
+                        </button>
+                      </td>
+                      <td>
+                        <img
+                          src="assets\imgs\maybom\app1.jpg"
+                          class="img-thumbnail me-2"
+                          alt="Bơm tăng áp mini Pamtex 10"
+                        />
+                        Bơm tăng áp mini Pamtex 10
+                      </td>
+                      <td>650.000 đ</td>
+                      <td>
+                        <div class="input-group input-group-sm">
+                          <button class="btn btn-outline-secondary">-</button>
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            value="1"
+                          />
+                          <button class="btn btn-outline-secondary">+</button>
+                        </div>
+                      </td>
+                      <td>1.300.000 đ</td>
+                    </tr>
+                    <!-- Thêm các dòng sản phẩm khác -->
+                    <tr>
+                      <td>
+                        <button class="btn btn-link text-danger p-0">
+                          &times;
+                        </button>
+                      </td>
+                      <td>
+                        <img
+                          src="assets\imgs\maybom\app1.jpg"
+                          class="img-thumbnail me-2"
+                          alt="Shirai SK 101"
+                        />
+                        Shirai SK 101
+                      </td>
+                      <td>900.000 đ</td>
+                      <td>
+                        <div class="input-group input-group-sm">
+                          <button class="btn btn-outline-secondary">-</button>
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            value="1"
+                          />
+                          <button class="btn btn-outline-secondary">+</button>
+                        </div>
+                      </td>
+                      <td>1.800.000 đ</td>
+                    </tr>
+                    <!-- Lặp lại cho các sản phẩm khác trong giỏ hàng -->
+                  </tbody>
+                </table>
+
+                <!-- Tổng cộng và nút hành động -->
+                <div class=" align-items-center">
+                  <button class="btn btn-primary ms-4 mb-4">Cập nhật giỏ hàng</button>
+                  <div class="text-end">
+                    <p class="mb-1"><strong>Tổng số lượng:</strong> 10</p>
+                    <p class="mb-1"><strong>Tổng cộng:</strong> 10.400.000 đ</p>
+                    <button class="btn btn-success mt-2">
+                      Tiến hành thanh toán
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
