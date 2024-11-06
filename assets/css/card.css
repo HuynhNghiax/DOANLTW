@@ -6,7 +6,7 @@
   
   .buy-now {
     position: absolute;
-    bottom: -40px; /* Đặt nút ra ngoài khung nhìn ban đầu */
+    bottom: -70px; /* Đặt nút ra ngoài khung nhìn ban đầu */
     left: 50%;
     transform: translateX(-50%);
     transition: bottom 0.3s ease; /* Hiệu ứng chuyển động */
