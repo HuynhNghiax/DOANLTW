@@ -1,0 +1,17 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+background-color: darkgreen;
+}
+.col-3.pt-2.text-start {
+    color: white;
+}
+.container{
+    background-color: aquamarine;
+}
+.page{
+    background-color: lightgray;
+}
