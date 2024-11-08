@@ -41,5 +41,11 @@ img.card-img-top {
     width: 150px; /* Chiều rộng cố định */
     height: 150px; /* Chiều cao cố định */
     object-fit: contain; /* Giữ nguyên tỉ lệ ảnh */
-  }
+}
+footer.bg-dark.text-white {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
   
