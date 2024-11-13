@@ -48,4 +48,13 @@ footer.bg-dark.text-white {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.container{
+    border-radius: 5px;
+    padding: 20px
+}
+.backgrond-img{
+    background-image: url("assets/imgs/khac/background.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px)
+}
   
