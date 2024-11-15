@@ -397,3 +397,86 @@
                     </div>
                 </div>
             </div>
+            <div class="row my-1">
+                <div class="col">
+                    <h4>Tin tức nổi bật</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets\imgs\khac\tintuc1.jpg" alt="Máy bơm nước biến tần" class="img-fluid" style="max-width: 70px;">
+                        <div class="card-body">
+                            <p class="mb-1">Máy bơm nước biến tần.</p>
+                            <a href="#" >...xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets\imgs\khac\tintuc2.jpg" alt="Máy bơm nước biến tần" class="img-fluid" style="max-width: 70px;">
+                        <div class="card-body">
+                            <p class="mb-1">Bơm chống lụt ở thành phố lớn</p>
+                            <a href="#" >...xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets\imgs\khac\tintuc3.jpg" alt="Máy bơm nước biến tần" class="img-fluid" style="max-width: 70px;">
+                        <div class="card-body">
+                            <p class="mb-1">Mẫu máy bơm mới của Sealand</p>
+                            <a href="#" >...xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets\imgs\khac\tintuc4.jpg" alt="Máy bơm nước biến tần" class="" style="max-width: 70px;">
+                        <div class="card-body">
+                            <p class="mb-1">Top máy bơm tháng 11</p>
+                            <a href="#" >...xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--het tin tức-->
+
+            <footer id="footer2"></footer>
+        </div>
+    </div>
+</div>
+</div>
+<footer id="footer"></footer>
+<script>
+    const header = document.getElementById("header");
+    const footer = document.getElementById("footer");
+    const header2 = document.getElementById("header2");
+    const footer2 = document.getElementById("footer2");
+    const nav = document.getElementById("nav");
+    const tintuc = document.getElementById("tintuc");
+    const chonmaybom = document.getElementById("chonmaybom");
+    fetch("./assets/component/header.html")
+        .then((response) => response.text())
+        .then((html) => (header.innerHTML = html));
+    fetch("./assets/component/footer.html")
+        .then((response) => response.text())
+        .then((html) => (footer.innerHTML = html));
+    fetch("./assets/component/footer2.html")
+        .then((response) => response.text())
+        .then((html) => (footer2.innerHTML = html));
+    fetch("./assets/component/header2.html")
+        .then((response) => response.text())
+        .then((html) => (header2.innerHTML = html));
+    fetch("./assets/component/nav.html")
+        .then((response) => response.text())
+        .then((html) => (nav.innerHTML = html));
+    fetch("./assets/component/tintuc.html")
+        .then((response) => response.text())
+        .then((html) => (tintuc.innerHTML = html));
+    fetch("./assets/component/chonmaybom.html")
+        .then((response) => response.text())
+        .then((html) => (chonmaybom.innerHTML = html));
+</script>
+</body>
+</html>
