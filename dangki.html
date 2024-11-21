@@ -19,17 +19,19 @@
 		  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
 		  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body style="background-color: rgb(242 244 247)">
 <header id="header"></header>
+<div id="header2"></div>
+<nav id="nav"></nav>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="border p-3">
-				<div id="header2"></div>
-				<nav id="nav"></nav>
+				
 				<!-- phan thay doi -->
 				<div class="col-md-12">
 					<div class="container">
+						<p>Bạn đã có tài khoản ? <a href="nguoidung.html">Đăng nhập</a> tại đây</p>
 						<div class="text-center">
 							<h2 class="text-primary">Đăng Kí</h2>
 							<p class="text-muted ">Hãy đăng kí để nhận được nhiều thông báo về khuyến mãi và nhiều hơn nữa</p>
@@ -39,12 +41,14 @@
 							<div class="row">
 								<div class="col">
 									<div class="mb-3">
-										<input type="text" class="form-control" placeholder="Họ và tên">
+										<p>Họ và tên</p>
+										<input type="text" class="form-control">
 									</div>
 								</div>
 								<div class="col">
 									<div class="mb-3">
-										<input type="text" class="form-control" placeholder="Số điện thoại">
+										<p>Số điện thoại</p>
+										<input type="text" class="form-control">
 									</div>
 								</div>
 							</div>
@@ -52,12 +56,14 @@
 							<div class="row">
 								<div class="col">
 									<div class="mb-3">
-										<input type ="text" class="form-control" placeholder="Tên đăng nhập">
+										<p>Tên đăng nhập</p>
+										<input type ="text" class="form-control">
 									</div>
 								</div>
 								<div class="col">
 									<div class="mb-3">
-										<input tpye="email" class ="form-control" placeholder="Email">
+										<p>Email</p>
+										<input tpye="email" class ="form-control">
 									</div>
 								</div>
 							</div>
@@ -65,12 +71,14 @@
 							<div class="row">
 								<div class="col">
 									<div class="mb-3">
-										<input type="text" class="form-control" placeholder="Mật khẩu">
+										<p>Mật khẩu</p>
+										<input type="text" class="form-control">
 									</div>
 								</div>
 								<div class = "col">
 									<div class="mb-3">
-										<input type="text" class="form-control" placeholder="Số tài khoản ngân hàng">
+										<p>Số tài khoản ngân hàng (không bắt buộc)</p>
+										<input type="text" class="form-control">
 									</div>
 								</div>
 							</div>
@@ -78,12 +86,14 @@
 							<div class="row">
 								<div class="col-6">
 									<div class="mb-3">
-										<input type="text" class="form-control" placeholder="Nhập lại mật khẩu">
+										<p>Nhập lại mật khẩu</p>
+										<input type="text" class="form-control">
 									</div>
 								</div>
 								<div class="col-6">
 									<div class="mb-3">
-										<input type="text" class="form-control" placeholder="Địa chỉ">
+										<p>Địa chỉ</p>
+										<input type="text" class="form-control">
 									</div>
 								</div>
 							</div>
@@ -95,7 +105,7 @@
 								<div class="col-4">
 									<select class="form-control">
 										<option>Nữ</option>										
-										<option>Nam</option>
+										<option selected>Nam</option>
 									</select>
 								</div>
 								<div class="col-2 mb-3">
@@ -111,9 +121,12 @@
 								<input type="checkbox">
 								<label>Tôi đã đọc và đồng ý với <a href="chinhsachbaohanh.html">Điều khoản sử dụng</a> </label>
 								</div>
+							</div>
+							<div class="row justify-content-center">
 								<div class="col-3">
-								<button type="button" class="btn btn-dark w-100 mb-3">Đăng kí</a></button
+									<button type="button" class="btn btn-primary w-100 mb-3">Đăng kí</a></button
 								</div>
+							</div>
 							</div>
 					</div>
 					</form>
