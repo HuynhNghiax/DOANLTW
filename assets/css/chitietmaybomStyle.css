@@ -1,0 +1,33 @@
+.checked{
+    color: yellow;
+}
+.star{
+    padding:10px;
+    font-size: 30px;
+}
+.rating{
+    padding:0;
+}
+.p-comment{
+    background-color: rgb(202, 56, 56);
+    padding:10px;
+    color:white
+}
+.comment-area{
+    margin: 10px;
+    width:97%;
+}
+.com-btn{
+    width: 20%;
+    margin:10px;
+    background-color:rgb(202, 56, 56);
+    color:white;
+}
+.number{
+    width: 40%;
+}
+.lg-img{
+    width:100%;
+}
+
+
