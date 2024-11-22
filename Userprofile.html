@@ -57,7 +57,7 @@
                  <p class="m-2">Địa chỉ : số 123 đường ABC thành phố XYZ</p>
                  <p class="m-2">Email : Email@gmail.com</p>
                  <p class="m-2">Số điện thoại : 0123 456 789</p>
-                 <button class="btn button2 form-control">Thay đổi thông tin cá nhân</button>
+                 <a href="profile.html" class="link"><<button class="btn button2 form-control">Thay đổi thông tin cá nhân</button>/a>
                </div>
              </div>
               <br>
@@ -187,3 +187,47 @@
                 <div class="col-3 mt-2">
                   <div id="tintuc"></div>
                 </div>
+                 </div>
+            </div>
+
+          </div>
+        </div>
+
+        <footer id="footer2"></footer>
+      </div>
+    </div>
+  </div>
+</div>
+<footer id="footer"></footer>
+<script>
+  const header = document.getElementById("header");
+  const footer = document.getElementById("footer");
+  const header2 = document.getElementById("header2");
+  const footer2 = document.getElementById("footer2");
+  const nav = document.getElementById("nav");
+  const tintuc = document.getElementById("tintuc");
+  const chonmaybom = document.getElementById("chonmaybom");
+  fetch("./assets/component/header.html")
+          .then((response) => response.text())
+          .then((html) => (header.innerHTML = html));
+  fetch("./assets/component/footer.html")
+          .then((response) => response.text())
+          .then((html) => (footer.innerHTML = html));
+  fetch("./assets/component/footer2.html")
+          .then((response) => response.text())
+          .then((html) => (footer2.innerHTML = html));
+  fetch("./assets/component/header2.html")
+          .then((response) => response.text())
+          .then((html) => (header2.innerHTML = html));
+  fetch("./assets/component/nav.html")
+          .then((response) => response.text())
+          .then((html) => (nav.innerHTML = html));
+  fetch("./assets/component/tintuc.html")
+          .then((response) => response.text())
+          .then((html) => (tintuc.innerHTML = html));
+  fetch("./assets/component/chonmaybom.html")
+          .then((response) => response.text())
+          .then((html) => (chonmaybom.innerHTML = html));
+</script>
+</body>
+</html>
