@@ -60,3 +60,6 @@ footer.bg-dark.text-white {
 img.img-fluid.rounded {
     height: 100px;
 }
+.card.position-relative.border-dark {
+    height: 290px;
+}
