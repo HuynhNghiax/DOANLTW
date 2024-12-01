@@ -8,67 +8,76 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/admin.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+            integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>admin</title>
 </head>
 
 <body>
-    <div class="d-flex" id="wrapper">
-        <!-- Sidebar -->
-        <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i
-                    class="fas fa-user-secret me-2"></i>Quản Lý</div>
-            <div class="list-group list-group-flush my-3">
-                <a href="#id1" class="list-group-item list-group-item-action bg-transparent second-text active"
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i
+                class="fas fa-user-secret me-2"></i>Quản Lý</div>
+        <div class="list-group list-group-flush my-3">
+            <a href="#id1" class="list-group-item list-group-item-action bg-transparent second-text active"
                data-bs-toggle="tab" role="tab" aria-controls="home" aria-selected="true"><i
                     class="fas fa-tachometer-alt me-2"></i>Quản lý mua bán</a>
-                <a href="#id2" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+            <a href="#id2" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
                data-bs-toggle="tab" role="tab" aria-controls="home" aria-selected="true"><i
                     class="fas fa-project-diagram me-2"></i>Quản lý máy bơm</a>
-                <a href="#id3" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+            <a href="#id3" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
                data-bs-toggle="tab" role="tab" aria-controls="home" aria-selected="true"><i
-                        class="fas fa-chart-line me-2"></i>Quản lý người dùng</a>
-                <a href="#id4" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
-                   data-bs-toggle="tab" role="tab" aria-controls="home" aria-selected="true"><i
+                    class="fas fa-chart-line me-2"></i>Quản lý người dùng</a>
+            <a href="#id4" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+               data-bs-toggle="tab" role="tab" aria-controls="home" aria-selected="true"><i
                     class="fas fa-paperclip me-2"></i>Báo Cáo</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
-                        class="fas fa-power-off me-2"></i>Đăng xuất</a>
-            </div>
+            <a href="#id3" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+               data-bs-toggle="tab" role="tab" aria-controls="home" aria-selected="true"><i
+                    class="fas fa-chart-line me-2"></i>menu1</a>
+            <a href="#id3" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+               data-bs-toggle="tab" role="tab" aria-controls="home" aria-selected="true"><i
+                    class="fas fa-chart-line me-2"></i>menu2</a>
         </div>
-        <!-- /#sidebar-wrapper -->
+    </div>
+    <!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="fs-2 m-0">Trang tổng quan</h2>
-                </div>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="tab-content">
+            <div class="tab-pane fade active show" id="id1">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-align-left primary-text fs-4 me-3"></i>
+                        <h2 class="fs-2 m-0">Quản lý mua hàng</h2>
+                    </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user me-2"></i>Nghĩa dz
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Thông tin cá nhân</a></li>
-                                <li><a class="dropdown-item" href="#">Các cài đặt</a></li>
-                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-    <!--Thông số-->
-            <div class="container-fluid px-4">
-                <div class="row g-3 my-2">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
+                                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-user me-2"></i>Nghĩa dz
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Thông tin cá nhân</a></li>
+                                    <li><a class="dropdown-item" href="#">Các cài đặt</a></li>
+                                    <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="container-fluid px-4">
+                    <div class="row g-3 my-2">
                         <div class="col">
                             <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                                 <div>
@@ -90,114 +99,89 @@
                         </div>
                     </div>
 
-                <div class="row my-5">
-                    <h3 class="fs-4 mb-3">Đơn đặt hàng gần đây</h3>
-                    <div class="input-group w-25 my-2">
+                    <div class="row my-5">
+                        <h3 class="fs-4 mb-3">Đơn đặt hàng gần đây <span>
+                            <div class="input-group w-25 my-2">
                                    <input type="text" class="form-control " placeholder="Tìm theo tên người mua...">
-                     </div>
-                    <div class="col">
-                        <table class="table bg-white rounded shadow-sm  table-hover">
-                            <thead>
+                            </div>
+                        </span></h3>
+
+                        <div class="col">
+                            <table class="table bg-white rounded shadow-sm  table-hover">
+                                <thead>
                                 <tr>
                                     <th scope="col" width="50">#</th>
                                     <th scope="col">Sản Phẩm</th>
                                     <th scope="col">Khách Hàng</th>
+                                    <th scope="col" class="text-center">Số lượng</th>
                                     <th scope="col">Giá</th>
                                     <th class="text-center">Hủy</th>
                                 </tr>
-                            </thead>
-                            <tbody>
+                                </thead>
+                                <tbody>
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>Máy bơm kangoroo</td>
-                                    <td>User1</td>
+                                    <td>Jonny</td>
+                                    <td class="text-center">2</td>
                                     <td>1.200.000 vnd</td>
                                     <td class="text-center"><input type="checkbox"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
                                     <td>Máy bơm kangoroo</td>
-                                    <td>User2</td>
+                                    <td>Jonny</td>
+                                    <td class="text-center">2</td>
                                     <td>1.200.000 vnd</td>
                                     <td class="text-center"><input type="checkbox"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
                                     <td>Máy bơm kangoroo</td>
-                                    <td>User3</td>
+                                    <td>Jonny</td>
+                                    <td class="text-center">2</td>
                                     <td>1.200.000 vnd</td>
                                     <td class="text-center"><input type="checkbox"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">4</th>
                                     <td>Máy bơm kangoroo</td>
-                                    <td>User4</td>
+                                    <td>Jonny</td>
+                                    <td class="text-center">2</td>
                                     <td>1.200.000 vnd</td>
                                     <td class="text-center"><input type="checkbox"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">5</th>
                                     <td>Máy bơm kangoroo</td>
-                                    <td>User5</td>
+                                    <td>Jonny</td>
+                                    <td class="text-center">2</td>
                                     <td>1.200.000 vnd</td>
                                     <td class="text-center"><input type="checkbox"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">6</th>
                                     <td>Máy bơm kangoroo</td>
-                                    <td>User6</td>
+                                    <td>Jonny</td>
+                                    <td class="text-center">2</td>
                                     <td>1.200.000 vnd</td>
                                     <td class="text-center"><input type="checkbox"></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">7</th>
                                     <td>Máy bơm kangoroo</td>
-                                    <td>User7</td>
+                                    <td>Jonny</td>
+                                    <td class="text-center">2</td>
                                     <td>1.200.000 vnd</td>
                                     <td class="text-center"><input type="checkbox"></td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">8</th>
-                                    <td>Máy bơm kangoroo</td>
-                                    <td>User8</td>
-                                    <td>1.200.000 vnd</td>
-                                    <td class="text-center"><input type="checkbox"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">9</th>
-                                    <td>Máy bơm kangoroo</td>
-                                    <td>User9</td>
-                                    <td>1.200.000 vnd</td>
-                                    <td class="text-center"><input type="checkbox"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">10</th>
-                                    <td>Máy bơm kangoroo</td>
-                                    <td>User10</td>
-                                    <td>1.200.000 vnd</td>
-                                    <td class="text-center"><input type="checkbox"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">11</th>
-                                    <td>Máy bơm kangoroo</td>
-                                    <td>User11</td>
-                                    <td>1.200.000 vnd</td>
-                                    <td class="text-center"><input type="checkbox"></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">12</th>
-                                    <td>Máy bơm kangoroo</td>
-                                    <td>User12</td>
-                                    <td>1.200.000 vnd</td>
-                                    <td class="text-center"><input type="checkbox"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="tab-pane fade" id="id2">
+            <div class="tab-pane fade" id="id2">
                 <div class="d-flex align-items-center m-4">
                     <i class="fas fa-align-left primary-text fs-4 me-3"></i>
                     <h2 class="fs-2 m-0">Quản lý máy bơm</h2>
@@ -322,7 +306,7 @@
                     </div>
                 </div>
             </div>
-        <div class="tab-pane fade" id="id3">
+            <div class="tab-pane fade" id="id3">
                 <div class="m-4">
                     <div class="d-flex align-items-center">
                         <i class="fas fa-align-left primary-text fs-4 me-3"></i>
@@ -411,12 +395,82 @@
                 </div>
 
             </div>
-    </div>
-    <!-- /#page-content-wrapper -->
+            <div class="tab-pane fade" id="id4">
+                <div class="m-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-align-left primary-text fs-4 me-3"></i>
+                        <h2 class="fs-2 m-0">Báo cáo</h2>
+                    </div>
+                </div>
+                <div class="container-fluid px-4 bg-white m-3">
+                    <div class="row my-5">
+                        <div class="container my-4">
+                            <div class="container mt-5">
+                                <h1 class="mb-4">Danh Sách Báo Cáo Người Dùng</h1>
+
+                                <table class="table table-bordered">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Mã Báo Cáo</th>
+                                        <th scope="col">Tên Người Dùng</th>
+                                        <th scope="col">Ngày Báo Cáo</th>
+                                        <th scope="col">Nội Dung</th>
+                                        <th scope="col">Trạng Thái</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>BC001</td>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>2024-11-30</td>
+                                        <td>Vấn đề về đăng nhập</td>
+                                        <td>
+                                            <select class="form-control">
+                                                <option class="badge bg-warning" >Đang xử lý</option>
+                                                <option class="badge bg-success" selected>Hoàn thành</option>
+                                                <option class="badge bg-danger" >Cần xử lý ngay</option>
+                                            </select></td>
+                                    </tr>
+                                    <tr>
+                                        <td>BC002</td>
+                                        <td>Trần Thị B</td>
+                                        <td>2024-11-29</td>
+                                        <td>Không thể tải ảnh</td>
+                                        <td>
+                                            <select class="form-control">
+                                                <option class="badge bg-warning" selected>Đang xử lý</option>
+                                                <option class="badge bg-success" >Hoàn thành</option>
+                                                <option class="badge bg-danger" >Cần xử lý ngay</option>
+                                            </select></td>
+                                    </tr>
+                                    <tr>
+                                        <td>BC003</td>
+                                        <td>Lê Minh C</td>
+                                        <td>2024-11-28</td>
+                                        <td>Lỗi giao diện người dùng</td>
+                                        <td>
+                                            <select class="form-control">
+                                                <option class="badge bg-warning" >Đang xử lý</option>
+                                                <option class="badge bg-success" >Hoàn thành</option>
+                                                <option class="badge bg-danger" selected>Cần xử lý ngay</option>
+                                            </select></td>
+                                    </tr>
+                                    <!-- Thêm các báo cáo khác ở đây -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/admin.js"></script>
+</div>
+<!-- /#page-content-wrapper -->
+</div>
+<script src="assets/js/admin.js"></script>
 </body>
 
 </html>
