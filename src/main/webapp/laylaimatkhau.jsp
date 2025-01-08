@@ -45,7 +45,7 @@
                         </div>
                         <button type="submit" class="btn btn-custom btn-block border-danger" style="margin-left: 200px;">Đặt lại mật khẩu</button>
                         <div class="mt-3">
-                          <a href="nguoidung.jsp" class="text-muted">← Quay lại để đăng nhập</a>
+                          <a href="dangnhap.jsp" class="text-muted">← Quay lại để đăng nhập</a>
                         </div>
                       </form>
                     </div>

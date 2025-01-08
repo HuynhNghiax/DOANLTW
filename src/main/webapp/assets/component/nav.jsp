@@ -30,7 +30,7 @@
             <a class="nav-link" style="color: white; font-weight: bold" href="giohang.jsp"><span class="cart-icon">🛒</span>GIỎ HÀNG (0)</a></a>
           </li>
           <li class="nav-item py-2">
-            <a class="nav-link" style="color: white; font-weight: bold" href="nguoidung.jsp"><i class="fa-solid fa-user" style="color: #32284d;"></i>NGƯỜI DÙNG</a></a>
+            <a class="nav-link" style="color: white; font-weight: bold" href="dangnhap.jsp"><i class="fa-solid fa-user" style="color: #32284d;"></i>NGƯỜI DÙNG</a></a>
           </li>
         </ul>
       </div>

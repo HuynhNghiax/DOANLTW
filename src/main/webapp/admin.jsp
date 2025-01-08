@@ -37,8 +37,8 @@
                     class="fas fa-paperclip me-2"></i>Báo Cáo</a>
             <a href="#id5" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
                data-bs-toggle="tab" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-gift"></i> Bảo Hành </a>
-            <a href="#id6" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
-               data-bs-toggle="tab" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-power-off"></i> Thoát</a>
+            <a href="index.jsp" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"
+               aria-selected="true"><i class="fa-solid fa-power-off"></i> Thoát</a>
         </div>
     </div>
     <!-- /#sidebar-wrapper -->

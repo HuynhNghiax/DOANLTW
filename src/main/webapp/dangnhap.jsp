@@ -1,11 +1,13 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="../../../../../../hoc/github/DOANLTW/assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
     <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -32,12 +34,12 @@
                         <h2>Welcome back!</h2>
                         <p class="text-muted">Đơn giản hóa quy trình làm việc của bạn và tăng năng suất với ứng dụng của
                             chúng tôi. Bắt đầu miễn phí</p>
-                        <form>
+                        <form action="LoginController" method="post">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" id="username" name="username" class="form-control" placeholder="Username">
                             </div>
                             <div class="mb-3 position-relative">
-                                <input type="password" class="form-control" placeholder="Password">
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Password">
                                 <a href="#" class="position-absolute end-0 me-3 mt-2 text-decoration-none"
                                    style="top: 0; bottom: 0; margin-top: auto; margin-bottom: auto;"><i
                                         class="fa-solid fa-eye"></i></a>
@@ -45,7 +47,7 @@
                             <div class="mb-3 text-end">
                                 <a href="laylaimatkhau.jsp" class="text-decoration-none">Forgot Password?</a>
                             </div>
-                            <button type="button" class="btn btn-dark w-100 mb-3">Login</button>
+                            <button type="submit" class="btn btn-dark w-100 mb-3">Login</button>
                         </form>
 
                         <div class="text-center">or continue with</div>

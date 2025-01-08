@@ -1,12 +1,15 @@
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
-<!DOCTYPE html>
+  <%@ page contentType="text/html; charset=UTF-8" language="java" %>
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+  <%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href=assets/css/chitietsanpham.css">
+    <link rel="stylesheet" href="assets/css/chitietsanpham.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -36,15 +39,12 @@
                 <div class="row">
                   <!-- Image Section -->
                   <div class="col-md-6">
-                    <img src="assets\imgs\maybom\pamtex1.jpg" class="Bơm Tăng Áp Mini PAMTEX 10" alt="Komono Magnus" style="width: 550px;">
+                    <img src="assets/imgs/maybom/${product.image}"  alt="${product.name_product}" style="width: 550px;">
                   </div>
             
                   <!-- Product Info Section -->
                   <div class="col-md-6">
-                    <p><a  class="text-decoration-none" href="index.jsp">Trang chủ</a>
-                          > <a class="text-decoration-none" href="maybomtheohang.jsp">
-                              Máy bơm Hitachi</a></p>
-                    <h1 class="product-title">Bơm Tăng Áp Mini PAMTEX 10</h1>
+                    <h1 class="product-title">${product.name_product}</h1>
                     <p>
                       <span class="price">8.500.000 vnđ</span>
                       <span class="original-price">9.500.00 vnđ</span>
@@ -93,19 +93,19 @@
                             <tbody>
                                 <tr>
                                     <td>Công suất (W)</td>
-                                    <td>100</td>
+                                    <td>${product.power}</td>
                                 </tr>
                                 <tr>
                                     <td>Lưu lượng (lít/phút)</td>
-                                    <td>2</td>
+                                    <td>${product.pressure}</td>
                                 </tr>
                                 <tr>
                                     <td>Cột áp (m)</td>
-                                    <td>15</td>
+                                    <td>${product.flow_rate}</td>
                                 </tr>
                                 <tr>
                                     <td>Đường kính ống (mm)</td>
-                                    <td>20</td>
+                                    <td>${product.pipe_diameter}</td>
                                 </tr>
                                 <tr>
                                     <td>Nguồn điện (V)</td>
